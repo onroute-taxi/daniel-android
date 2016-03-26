@@ -11,8 +11,9 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".LocationSuggestionScreenActivity"
-            android:screenOrientation="landscape">
+            android:name=".VideoPlayerScreen"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

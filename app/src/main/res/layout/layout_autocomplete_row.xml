@@ -1,49 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="7dp">
+
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_weight="1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/autocomplete_row_airport_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/autocomplete_row_airport_location_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="Chaparty National Airport"
+                android:textColor="@color/materialGray600"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/autocomplete_row_airport_name_text_view"
-            android:gravity="left"
-            android:textSize="30sp"
+            android:id="@+id/autocomplete_row_airport_distance_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical|right"
+            android:text="3.5 km"
+            android:textAllCaps="true"
             android:textColor="@android:color/white"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-
-        <TextView
-            android:id="@+id/autocomplete_row_airport_location_text_view"
-            android:gravity="left"
-            android:ellipsize="end"
-            android:text="Chaparty National Airport"
-            android:textSize="20sp"
-            android:textColor="#7b7b7b"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:textSize="18sp" />
 
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/autocomplete_row_airport_distance_text_view"
-        android:layout_marginRight="8dp"
-        android:layout_gravity="center|right"
-        android:textAllCaps="true"
-        android:text="3.5 km"
-        android:gravity="left"
-        android:textSize="30sp"
-        android:textColor="@android:color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent" />
-
-
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#616161"/>
 
 </LinearLayout>
