@@ -40,6 +40,7 @@
     <string name="screen_drawer_button_about">About</string>
     <string name="screen_drawer_button_help">Help</string>
     <string name="drawer_about_message">Crafted with passion in India</string>
+    <string name="now_playing">Now Playing</string>
 
 
 </resources>
